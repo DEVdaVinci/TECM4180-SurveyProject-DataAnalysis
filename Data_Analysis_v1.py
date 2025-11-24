@@ -311,10 +311,10 @@ class sample:
         plt.figure(figureID)
         plt.hist(self.data[self.outputColName], bins=self.bins, density=isProbabilityGraph, edgecolor='black')
         if isProbabilityGraph:
-            plt.title(f'Probability graph of {self.outputColName} for {self.inputColumnValue}')
+            plt.title(f'Probability graph of {self.outputColName} for {self.inputColumnValue} value of {self.inputColumnName}')
             plt.ylabel('Probability')
         else:
-            plt.title(f'Histogram of {self.outputColName} for {self.inputColumnValue}')
+            plt.title(f'Histogram of {self.outputColName} for {self.inputColumnValue} value of {self.inputColumnName}')
             plt.ylabel('Frequency')
         plt.xlabel('Value')
         
@@ -334,10 +334,10 @@ class sample:
         
         plt.hist(self.subset[self.outputColName], bins=self.bins_subset, density=isProbabilityGraph, edgecolor='black')
         if isProbabilityGraph:
-            plt.title(f'Probability graph of {self.outputColName} for {self.inputColumnValue}')
+            plt.title(f'Probability graph of {self.outputColName} for {self.inputColumnValue} value of {self.inputColumnName}')
             plt.ylabel('Probability')
         else:
-            plt.title(f'Histogram of {self.outputColName} for {self.inputColumnValue}')
+            plt.title(f'Histogram of {self.outputColName} for {self.inputColumnValue} value of {self.inputColumnName}')
             plt.ylabel('Frequency')
         plt.xlabel('Value')
         
@@ -389,7 +389,7 @@ class sample:
 
 
         if isProbabilityGraph:
-            plt.title(f'Probability graph of {outputCoumnName} for {self.inputColumnValue}')
+            plt.title(f'Probability graph of {outputCoumnName} for {self.inputColumnValue} value of {self.inputColumnName}')
             plt.ylabel('Probability')
         else:
             plt.title(f'Histogram of {outputCoumnName} for {columnsTitle}')
